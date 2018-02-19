@@ -41,7 +41,6 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'rspec-rails'
   gem 'rails-controller-testing'
-  gem 'paperclip', '~> 5.0.0.beta1'
 end
 
 group :development do
