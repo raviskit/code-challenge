@@ -1,0 +1,28 @@
+<div class='container-fluid'>
+ 	<div class='row'>
+    <h3>Company Dashboard</h3>
+    <div class='col-md-10'></div>
+    <div class='col-md-2'>
+      <%= link_to 'Add Company', new_company_path, class: 'btn btn-success pull-right'%>
+    </div>
+    
+    <div id='cmpny-margin'>
+      <% @companies.each do |company| %>
+        <div class='custom-well'>
+          <div class="row">
+            <div class='col-md-10'></div>
+            <div class='col-md-2'>
+              <%= link_to 'more', company_path(company.id), class: 'btn btn-success pull-right' %>
+            </div>
+          </div>
+          <div class="row">
+            <h2><%= company.name.capitalize %> |</h2>  <h4 id="city_and_state"><%= company.city.capitalize %>, <%= company.state.capitalize %></h4>
+          </div>
+          <br />
+          <h6><%= company.description %></h6>
+        </div>
+      <% end %>
+    </div>
+
+ 	</div>
+</div>

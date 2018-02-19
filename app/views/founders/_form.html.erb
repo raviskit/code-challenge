@@ -1,0 +1,24 @@
+
+<div class="jumbotron">
+  <%= form_for @company, html: { class: 'form-horizontal'} do |f|%>
+    <%= f.fields_for :founders, @founder do |g| %>
+      <div class="form-group">
+        <div class="row">
+          <%= g.label :full_name, 'Founder Name', class: 'control-label required' %>
+          <div class="col-sm-10">
+            <%= g.text_field :full_name, maxlength: '100', placeholder: 'Enter the Founder name'%>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-md-4">
+            <%= g.label :title, class: 'control-label required' %>
+            <%= g.text_field :title  %>
+          </div>
+        </div>
+        <br />
+      </div>
+    <% end %>
+    <%= f.submit 'Submit', class: 'btn btn-success pull-left'%>
+  <% end %>
+</div>

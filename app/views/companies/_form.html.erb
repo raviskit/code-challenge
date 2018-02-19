@@ -1,0 +1,37 @@
+
+<div class="jumbotron">
+  <%= form_for @company, html: { class: 'form-horizontal'} do |f|%>
+    <div class="form-group">
+      <div class="row">
+        <%= f.label :name, 'Company Name', class: 'control-label required' %>
+        <div class="col-sm-10">
+          <%= f.text_field :name, maxlength: '100', placeholder: 'Enter the company name'%>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-md-4">
+          <%= f.label :city, class: 'control-label required' %>
+          <%= f.text_field :city  %>
+        </div>
+        <div class="col-md-4">
+          <%= f.label :state, class: 'control-label required' %>
+          <%= f.text_field :state%>
+        </div>
+        <div class="col-md-4">
+          <%= f.label :founded_date, class: 'control-label' %>
+          <%= f.date_select :founded_date %>
+        </div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-md-12">
+          <%= f.label :description, class: 'control-label required' %>
+          <%= f.text_area :description, row: 5, class: 'form-control', placeholder: 'Add a description'  %>
+        </div>
+      </div>
+    </div>
+    <%= f.submit 'Submit', class: 'btn btn-success pull-left'%>
+  <% end %>
+</div>
