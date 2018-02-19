@@ -1,24 +1,5 @@
-# README
+Rails app build using Rails 5, Ruby 2.4.1
+App is deployed to heroku at https://company100.herokuapp.com/
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+clone into your local and run rake db:create and rake db:migrate
+and run the server using rails s
