@@ -32,6 +32,7 @@ gem 'jbuilder', '~> 2.5'
   gem 'jquery-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'bootstrap', '~> 4.0.0.alpha3'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -41,7 +42,7 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'rspec-rails'
   gem 'rails-controller-testing'
-  gem 'bootstrap', '~> 4.0.0.alpha3'
+
 end
 
 group :development do
