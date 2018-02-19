@@ -1,7 +1,7 @@
 class AddAttachmentCompanyPictureToCompanies < ActiveRecord::Migration[5.1]
   def self.up
     change_table :companies do |t|
-      t.attachment :company_picture
+      t.has_attached_file :company_picture
     end
   end
 
