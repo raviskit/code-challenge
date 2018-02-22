@@ -42,7 +42,6 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'rspec-rails'
   gem 'rails-controller-testing'
-
 end
 
 group :development do
